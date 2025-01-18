@@ -1,0 +1,86 @@
+body {
+  /* Inizializzazione di un gradiente */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgb(122, 234, 132), rgb(104, 209, 209), rgba(255, 0, 255, 1));
+  background-size: 300% 300%;
+  /* Animazione che cambia gradualmente il gradiente */
+  animation: gradientChange 62s ease-out infinite;
+}
+
+@keyframes gradientChange {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%
+  }
+  100%{
+    background-position: 0 50%
+  }
+}
+
+.toolbarIcon{
+  background-color: #282828 !important;
+  height: 4dvh !important;
+  width: 3dvw !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-top: 1.2dvh !important;
+  padding-bottom: 1.2dvh !important;
+  border-radius: 1dvmin !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.toolbarIcon:active{
+  background-color: #535252 !important;
+  border: solid 1px white !important;
+}
+
+input[type="color"]{
+  background-color: #282828 !important;
+  height: 4dvh !important;
+  width: 3dvw !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-top: 0.5dvh !important;
+  padding-bottom: 0.8dvh !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"],
+input[type="number"]{
+
+  font-size: 2dvh !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  outline: none !important;
+  border: none !important;
+  background-color: #282828 !important;
+  height: 4dvh !important;
+  width: 3dvw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-top: 1.2dvh !important;
+  padding-bottom: 1.2dvh !important;
+  border-radius: 1dvmin !important;
+  text-align: center;
+
+}
+
+.selected {
+  background-color: #535252 !important; /* Colore quando il bottone è selezionato */
+  color: #000000;
+  border: solid 2px white !important;
+}
